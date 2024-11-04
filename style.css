@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --main-color: #088178;
+    --text-color: #333333;
+    --bg-color: #e8e8e8;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*small*/
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 90%;
+    }
+}
+
+.header {
+    margin-top: 20px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+}
+
+.header .container .logo {
+    font-size: 35px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.header .container .logo span {
+    color: var(--main-color);
+}
+
+.header .container ul {
+    display: flex;
+    list-style: none;
+}
+
+.header .container ul li {
+    padding: 0 20px;
+}
+
+.header .container ul li a {
+    color: var(--text-color);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.header .container ul li a:hover {
+    color: var(--main-color);
+}
+
+/*End Header*/
+
+/*Start Landing*/
+.landing {}
+
+.landing .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.landing .container img {
+    width: 40%;
+}
+
+.landing .container .text {
+    width: 60%;
+}
+
+.landing .container .text .first {
+    color: var(--text-color);
+    font-size: 25px;
+}
+
+.landing .container .text .two {
+    color: var(--text-color);
+    margin-bottom: 14px;
+    font-weight: bold;
+}
+
+.landing .container .text h1 {
+    color: var(--main-color);
+    letter-spacing: 6px;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+.landing .container .text a {
+    color: var(--bg-color);
+    background-color: var(--main-color);
+    padding: 18px 32px;
+    margin-top: 15px;
+    display: block;
+    width: fit-content;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/*End Landing*/
+
+
+
+.card-img-top {
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.card {
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.card-body {
+    padding: 25px;
+    margin-top: -15px;
+}
+
+.btn-primary {
+    border-radius: 50px;
+    width: 120px;
+}
+
+.btn-primary:hover {
+    background-color: rgb(25, 22, 73);
+    border: none;
+    transition: .6s;
+}
+
+h3,
+h5 {
+    color: rgb(0, 91, 228);
+}
+
+
+.card img:hover {
+    transform: translateY(-6px) scale(1.05);
+    transition: all .6s;
+}
+
+.nv:hover {
+    transform: translateY(-6px);
+    transition: all .6s;
+    font-weight: 600;
+}
